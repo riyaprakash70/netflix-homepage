@@ -1,0 +1,412 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#e50914;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#ff1e2d;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    padding:18px 0;
+    background:linear-gradient(to bottom,
+    rgba(0,0,0,.85),
+    transparent);
+    transition:.4s;
+    z-index:999;
+}
+
+.navbar-brand{
+    color:#e50914;
+    font-size:34px;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.navbar-brand:hover{
+    color:#ff2a37;
+}
+
+.nav-link{
+    color:#fff;
+    margin-left:18px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#e50914;
+}
+
+.navbar-toggler{
+    border:none;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    background:url("../images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+    to right,
+
+    rgba(0,0,0,.90),
+
+    rgba(0,0,0,.45),
+
+    rgba(0,0,0,.25)
+
+    );
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    max-width:620px;
+
+    z-index:2;
+
+}
+
+.hero h1{
+
+    font-size:68px;
+
+    font-weight:800;
+
+    line-height:78px;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    color:#ddd;
+
+    margin-bottom:35px;
+
+    width:85%;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.play-btn{
+
+    background:#fff;
+
+    color:#000;
+
+    border:none;
+
+    padding:15px 38px;
+
+    border-radius:5px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.play-btn:hover{
+
+    background:#ddd;
+
+    transform:translateY(-3px);
+
+}
+
+.info-btn{
+
+    background:rgba(109,109,110,.7);
+
+    color:#fff;
+
+    border:none;
+
+    padding:15px 38px;
+
+    border-radius:5px;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.info-btn:hover{
+
+    background:#6d6d6e;
+
+    transform:translateY(-3px);
+
+}
+
+.play-btn i,
+
+.info-btn i{
+
+    margin-right:10px;
+
+}
+
+/* ==========================
+   MOVIE SECTION
+========================== */
+
+.movies{
+
+    padding:70px 0;
+
+}
+
+.movies h2{
+
+    margin-bottom:30px;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.movie-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:22px;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+
+    background:#111;
+
+    border:none;
+
+    overflow:hidden;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:340px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.card:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+
+    0 20px 40px
+
+    rgba(229,9,20,.35);
+
+}
+
+.card:hover img{
+
+    transform:scale(1.15);
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    background:#050505;
+
+    padding:70px 0;
+
+    margin-top:60px;
+
+}
+
+footer h4{
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+}
+
+footer ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+footer li{
+
+    color:#9e9e9e;
+
+    margin-bottom:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+footer li:hover{
+
+    color:#fff;
+
+}
+
+footer i{
+
+    font-size:28px;
+
+    margin-right:15px;
+
+    cursor:pointer;
+
+    color:#999;
+
+    transition:.3s;
+
+}
+
+footer i:hover{
+
+    color:#e50914;
+
+}
+
+footer hr{
+
+    border-color:#333;
+
+    margin:40px 0;
+
+}
+
+footer p{
+
+    color:#888;
+
+}
