@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Expense Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>💰 Smart Expense Calculator</h1>
+
+<div class="form">
+
+<input type="number" id="income" placeholder="Monthly Income">
+
+<input type="text" id="category" placeholder="Expense Category">
+
+<input type="number" id="amount" placeholder="Expense Amount">
+
+<button onclick="addExpense()">
+Add Expense
+</button>
+
+<button onclick="calculate()">
+Calculate
+</button>
+
+</div>
+
+<div class="cards">
+
+<div class="card income">
+<h2>Income</h2>
+<p id="incomeCard">₹0</p>
+</div>
+
+<div class="card expense">
+<h2>Total Expense</h2>
+<p id="expenseCard">₹0</p>
+</div>
+
+<div class="card balance">
+<h2>Remaining Balance</h2>
+<p id="balanceCard">₹0</p>
+</div>
+
+<div class="card savings">
+<h2>Savings %</h2>
+<p id="savingPercent">0%</p>
+</div>
+
+<div class="card percent">
+<h2>Expense %</h2>
+<p id="expensePercent">0%</p>
+</div>
+
+<div class="card highest">
+<h2>Highest Expense</h2> 
+<p id="highestExpense">-</p>
+</div>
+
+</div>
+
+<h2 class="listTitle">Expense List</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Category</th>
+<th>Amount</th>
+</tr>
+</thead>
+
+<tbody id="expenseTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
